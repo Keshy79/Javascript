@@ -9,7 +9,8 @@ function submit() {
     var password = document.getElementById('password').value
 
     if (firstname === '' || lastname === '' || mailphone === '' || password === '') {
-    
+        // alert('Please fill in all fields')
+        showerror.innerHTML = 'Please fill in all fields'
     } else {
         let confirmation = confirm('Are you sure you want to submit')
         if (confirmation == true) {
