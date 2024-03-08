@@ -35,7 +35,6 @@ function submit() {
                 setTimeout(() => {
                     window.location.href = "./dashboard.html";
                 }, 7000);
-                // window.location.href = 'dashboard.html'
                 
             } else {
                 alert('Failed to submit')
