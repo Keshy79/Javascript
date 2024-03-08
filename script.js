@@ -26,7 +26,16 @@ function submit() {
                 console.log(pushedStudents);
 
                 localStorage.setItem('allstudents', JSON.stringify(allStudents))
-                window.location.href = 'dashboard.html'
+                Swal.fire({
+                    title: "Good job!",
+                    text: "Login Successful!",
+                    icon: "success"
+                });
+                userFound = true;
+                setTimeout(() => {
+                    window.location.href = "./dashboard.html";
+                }, 7000);
+                // window.location.href = 'dashboard.html'
                 
             } else {
                 alert('Failed to submit')
