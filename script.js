@@ -28,7 +28,7 @@ function submit() {
                 localStorage.setItem('allstudents', JSON.stringify(allStudents))
                 Swal.fire({
                     title: "Good job!",
-                    text: "Login Successful!",
+                    text: "Loged in Successful!",
                     icon: "success"
                 });
                 userFound = true;
