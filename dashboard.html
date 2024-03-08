@@ -6,7 +6,7 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
-        body{
+        .body{
             background-image: url(pexels-olena-bohovyk-3646172.jpg);
             background-position: center center;
             background-repeat: no-repeat;
@@ -16,10 +16,28 @@
              display: grid;
              /* place-items: center; */
         }
+        @media screen and (max-width: 600px) {
+            .body{
+            background-image: url(pexels-olena-bohovyk-3646172.jpg);
+            background-position: contain;
+            background-repeat: no-repeat;
+             background-size: cover;
+             width: 100%;
+             height: 180vh;
+             margin: 0;
+             display: grid;
+             overflow-y: hidden;
+        }
+        .sign{
+            margin-top: 20%;
+        }
+        }
+            
+        
     </style>
 </head>
-<body onload="display()">
-    <h4 class="text-center text-white" onclick="Signout()">SignOut</h4>
+<body onload="display()" class="body">
+    <h4 class="text-center sign text-white" onclick="Signout()">SignOut</h4>
     <h1 class="text-center text-uppercase text-white ">Welcome to Dashboard</h1>
     
     <div class="col-sm-12 col-lg-12 col-md-7">
