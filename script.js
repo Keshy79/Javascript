@@ -11,6 +11,10 @@ function submit() {
     if (firstname === '' || lastname === '' || mailphone === '' || password === '') {
         // alert('Please fill in all fields')
         showerror.innerHTML = 'Please fill in all fields'
+        setTimeout(() =>{
+            showerror.innerHTML = ''
+        }, 3000)
+        
     } else {
         let confirmation = confirm('Are you sure you want to submit')
         if (confirmation == true) {
