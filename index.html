@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <style>
+          body{
+            background-image: url(pexels-this-is-zun-1164572.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+             background-size: cover;
+             height: 100vh;
+             margin: 0;
+             display: grid;
+             /* place-items: center; */
+          }
+          .glass {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    color: #333;
+    font-family: system-ui, sans-serif;
+    max-width: 100%;
+    /* padding: 2rem 2rem; */
+    margin-top: -45px;
+    transform: translateY(100px);
+    width: 500px;
+    height: 450px;
+  }
+
+   @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .glassy-text {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+  }
+        </style>
+</head>
+<body>
+    <div class="container col-lg-7 col-10 glass">
+        <h3 class="text-center text-decoration-underline">School Portal</h3>
+
+        <div class="my-3">
+            <label for="" class="form-label">First Name:</label>
+            <input type="text" name="" id="firstname" class="form-control form-control-sm shadow-none">
+        </div>
+
+        <div class="my-3">
+            <label for="" class="form-label">Last Name:</label>
+            <input type="text" name="" id="lastname" class="form-control form-control-sm shadow-none">
+        </div>
+
+        <div class="my-3">
+            <label for="" class="form-label">Email/Phone Number:</label>
+            <input type="text" name="" id="mailphone" class="form-control form-control-sm shadow-none">
+        </div>
+
+        <div class="my-3">
+            <label for="" class="form-label">Password:</label>
+            <input type="password" name="" id="password" class="form-control form-control-sm shadow-none">
+        </div>
+        <button style="background-color: #0b0d0c; color: white;" class="btn btn w-100 my-3 btn-sm"  type="button" class="btn btn-primary" onclick="submit()">Submit</button>
+
+    </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text-dark text-uppercase" id="exampleModalLabel">Confirmation</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-dark">
+       <p>Are you sure you want to submit?</p> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="submit()">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
